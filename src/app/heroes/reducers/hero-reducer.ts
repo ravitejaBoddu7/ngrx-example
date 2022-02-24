@@ -9,7 +9,6 @@ const initialState : Hero[] = [{
 }]
 
 export function heroReducer (state : Hero[] = [], action: Action): Hero[] {
-  if (!state) return initialState
   switch(action.type) {
     case ADD_HERO:
       return [...state, (action as AddHero).heroToBeAdded]
