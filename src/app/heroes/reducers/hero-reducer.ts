@@ -8,8 +8,6 @@ const initialState : Hero[] = [{
   description: "This is my Initial Hero"
 }]
 
-// @not_null(param1, param2)
-// @validate
 export function heroReducer (state : Hero[] = [], action: Action): Hero[] {
   if (!state) return initialState
   switch(action.type) {

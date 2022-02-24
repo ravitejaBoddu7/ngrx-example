@@ -16,7 +16,7 @@ export class ReadDeleteComponent implements OnInit {
   heroes: Observable<Hero[]>
 
   constructor(private store: Store<AppState>) {
-    this.heroes = store.select("heroes")
+    this.heroes = this.store.select("heroes")
   }
 
   deleteHero(indexOfHeroToBeRemoved: number) {
